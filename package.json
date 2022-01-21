@@ -1,0 +1,26 @@
+{
+  "name": "totally-not-vscode",
+  "version": "0.0.1",
+  "description": "This is totally not a vs code rip off",
+  "main": "./dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "author": "Carl Upton",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "electron": "16.0.7",
+    "eslint": "^8.7.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.2.2",
+    "typescript": "^4.5.5"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
